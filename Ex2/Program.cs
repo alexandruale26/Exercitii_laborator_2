@@ -13,6 +13,9 @@ namespace Ex2
             int lungimeSir = int.Parse(Console.ReadLine());
 
             int[] sir = new int[lungimeSir];
+            int total = 0, numerePare = 0;
+            double mediaAritmetica = 0;
+
             if (lungimeSir < 2)
             {
                 Console.WriteLine("Sirul nu poate avea mai putin de 2 numere");
@@ -31,8 +34,6 @@ namespace Ex2
                 }
             }
 
-            int total = 0, numerePare = 0;
-            double mediaAritmetica = 0;
 
             for (int i = 0; i < sir.Length; i++)
             {
