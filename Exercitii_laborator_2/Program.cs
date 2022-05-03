@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Exercitii_laborator_2
+namespace Ex1
 {
     class Program
     {
