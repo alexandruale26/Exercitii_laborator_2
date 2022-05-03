@@ -12,9 +12,7 @@ namespace Ex2
             Console.WriteLine("Cate numere are sirul ?");
             int lungimeSir = int.Parse(Console.ReadLine());
 
-            int[] sir = new int[lungimeSir];
             int total = 0, numerePare = 0;
-            double mediaAritmetica = 0;
 
             if (lungimeSir < 2)
             {
@@ -22,24 +20,19 @@ namespace Ex2
                 return;
             }
 
-            Console.WriteLine("Introduceti numerele");
-            for (int i = 0; i < sir.Length; i++)
+            for (int i = 0; i < lungimeSir; i++)
             {
-                sir[i] = int.Parse(Console.ReadLine());
+                int aux = int.Parse(Console.ReadLine());
 
-                if (sir[i] <= 0)
+                if (aux <= 0)
                 {
                     Console.WriteLine("Numerele nu trebuie sa fie mai mici decat 0");
                     return;
                 }
-            }
 
-
-            for (int i = 0; i < sir.Length; i++)
-            {
-                if (sir[i] % 2 == 0)
+                if (aux % 2 == 0)
                 {
-                    total += sir[i];
+                    total += aux;
                     numerePare++;
                 }
                 else
@@ -48,7 +41,7 @@ namespace Ex2
                 }
             }
 
-            mediaAritmetica = (double)total / numerePare;
+            double mediaAritmetica = (double)total / numerePare;
 
             if (total == 0)
             {
